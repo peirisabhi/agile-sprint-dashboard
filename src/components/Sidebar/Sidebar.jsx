@@ -7,7 +7,7 @@ const Sidebar = ({ isOpen }) => {
       <div className="sidebar-header">
         <a href="#" className="sidebar-brand">
           <i className="fas fa-rocket"></i>
-          <span>AgileIntel</span>
+          <span>Sprint IQ</span>
         </a>
       </div>
 
@@ -27,15 +27,7 @@ const Sidebar = ({ isOpen }) => {
         {/* Other menu items */}
       </ul>
 
-      <div className="sidebar-footer">
-        <div className="card bg-light">
-          <div className="card-body p-3">
-            <h6 className="mb-2">Upgrade to Pro</h6>
-            <p className="text-muted small mb-2">Get advanced analytics and predictions</p>
-            <button className="btn btn-primary btn-sm w-100">Upgrade Now</button>
-          </div>
-        </div>
-      </div>
+      
     </aside>
   );
 };
