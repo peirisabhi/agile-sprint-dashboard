@@ -1,9 +1,9 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar/Sidebar';
-import Topbar from '../components/Topbar/Topbar';
-import StatsCards from '../components/StatsCards/StatsCards';
+import Sidebar from '../../components/Sidebar/Sidebar.jsx';
+import Topbar from '../../components/Topbar/Topbar.jsx';
+import StatsCards from '../../components/StatsCards/StatsCards.jsx';
 // import ProjectsTable from '../components/ProjectsTable/ProjectsTable';
-import BurndownChart from '../components/Charts/BurndownChart';
+import BurndownChart from '../../components/Charts/BurndownChart.jsx';
 // import VelocityChart from '../components/Charts/VelocityChart';
 // import WorkDistributionChart from '../components/Charts/WorkDistributionChart';
 // import SprintRecommendations from '../components/SprintRecommendations/SprintRecommendations';
