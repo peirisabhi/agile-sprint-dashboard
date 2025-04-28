@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Navigate, Route, Routes} from 'react-router-dom';
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
 import Login from './pages/Login/Login.jsx';
+import Velocity from './pages/Velocity/Velocity.jsx';
 import './App.css';
 import './assets/styles/variables.css';
 import {AuthProvider} from "./auth/AuthContext.jsx";
@@ -29,7 +30,9 @@ function App() {
         // </AuthProvider>
         <Router>
             <div className="app">
-                <Login/>
+                {/*<Login/>*/}
+                {/*<Dashboard/>*/}
+                <Velocity/>
             </div>
         </Router>
     );
