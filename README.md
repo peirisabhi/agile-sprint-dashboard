@@ -1,12 +1,44 @@
-# React + Vite
+# Agile Sprint Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic dashboard for Agile project management, designed to streamline sprint planning, team capacity tracking, and project oversight. Built for software teams using Jira-like workflows.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 1. **Project Management**
+- Track multiple projects with key details
+- Example from your system:
+  | ID | Name             | Description                          | Created Date |
+  |----|------------------|--------------------------------------|--------------|
+  | 1  | Agile Dashboard  | Development of sprint management dashboard | 2023-01-15 |
+  | 2  | Mobile App       | Cross-platform mobile application    | 2023-02-20 |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. **Sprint Planning (Sprint IQ)**
+- Manage sprints with real-time status tracking
+- Example sprint from your data:
+  | Sprint Name               | Status    | Start Date   | End Date     | Goal                          |
+  |---------------------------|-----------|--------------|--------------|-------------------------------|
+  | Sprint 0 - Setup          | COMPLETED | 2023-04-15   | 2023-04-28   | Project setup & configuration |
+  | Sprint 1 - Feature Dev    | IN_PROGRESS | 2023-05-01   | 2023-05-14   | User authentication flow      |
+
+### 3. **Team Capacity Management**
+- Track leaves and availability
+  | Resource   | Planned Leaves (Days) | Unplanned Leaves |
+  |------------|-----------------------|------------------|
+  | Member A   | 1                     | 0                |
+  | Member B   | 0.5                   | 0                |
+
+### 4. **Agile Workflow Integration**
+- Plan ceremonies: Backlog refinement, sprint reviews
+- Visualize team allocations and effective capacity
+
+---
+
+## 🛠️ Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/peirisabhi/agile-dashboard.git
+   cd agile-dashboard && npm install
+   npm start
