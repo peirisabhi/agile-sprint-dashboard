@@ -13,15 +13,33 @@ const Sidebar = ({ isOpen }) => {
 
       <ul className="sidebar-menu">
         <li className="active">
-          <a href="#">
+          <a href="/">
             <i className="fas fa-tachometer-alt"></i>
             <span>Dashboard</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="/sprints">
+          <i class="fas fa-running"></i>
+          <span>Sprints</span>
+          </a>
+        </li>
+        <li>
+          <a href="/projects">
             <i className="fas fa-project-diagram"></i>
             <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="/employees">
+          <i class="fas fa-users"></i>
+          <span>Team</span>
+          </a>
+        </li>
+        <li>
+          <a href="/backlogs">
+            <i className="fas fa-project-diagram"></i>
+            <span>Back Logs</span>
           </a>
         </li>
         {/* Other menu items */}

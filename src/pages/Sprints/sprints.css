@@ -1,0 +1,114 @@
+/* SprintDetails styles */
+.sprint-details {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .details-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .detail-label {
+    font-weight: 600;
+    min-width: 100px;
+    color: #555;
+  }
+  
+  .detail-value {
+    margin-left: 10px;
+  }
+  
+  .status-active {
+    color: #28a745;
+    font-weight: 600;
+  }
+  
+  .status-closed {
+    color: #6c757d;
+  }
+  
+  .status-future {
+    color: #17a2b8;
+  }
+  
+  .no-sprint {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+  }
+  
+  /* SprintList styles */
+  .sprint-list {
+    padding: 15px;
+  }
+  
+  .list-container {
+    display: grid;
+    gap: 8px;
+  }
+  
+  .sprint-item {
+    padding: 12px;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid #eee;
+  }
+  
+  .sprint-item:hover {
+    background: #f8f9fa;
+    transform: translateX(2px);
+  }
+  
+  .sprint-item.active {
+    border-left-color: #4285f4;
+    background: #f0f7ff;
+  }
+  
+  .sprint-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .sprint-dates {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 4px;
+  }
+  
+  .sprint-status {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Page styles */
+  .sprints-page {
+    padding: 20px;
+  }
+  
+  .page-header {
+    margin-bottom: 20px;
+  }
+  
+  .sprints-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .sprints-container {
+      grid-template-columns: 1fr;
+    }
+  }

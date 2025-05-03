@@ -1,0 +1,40 @@
+export const dummyBacklogs = [
+    {
+      boardId: 619,
+      isBacklog: true,
+      fixVersion: "1.1.0",
+      priority: "High",
+      assignee: "",
+      status: "To Do",
+      status_category: "",
+      creator: "Lokesh Jain",
+      reporter: "Lokesh Jain",
+      issuetype: "Sub-task",
+      project: "Apache Hudi",
+      created: "2025-03-25T11:23:17.000+0000",
+      updated: "2025-03-27T07:17:40.000+0000",
+      description: "While cherry-picking HUDI-1517, we are running into a few failures with",
+      summary: "Reenable disabled tests in TestHoodieBackedMetadata",
+      estimated_effort: 16,
+      key: "HUDI-1008"
+    },
+    {
+      boardId: 619,
+      isBacklog: true,
+      fixVersion: "1.2.0",
+      priority: "Medium",
+      assignee: "John Doe",
+      status: "In Progress",
+      status_category: "development",
+      creator: "Mike Smith",
+      reporter: "Mike Smith",
+      issuetype: "Task",
+      project: "Apache Hudi",
+      created: "2025-03-20T09:15:00.000+0000",
+      updated: "2025-03-28T14:30:00.000+0000",
+      description: "Implement new feature for data ingestion",
+      summary: "Add support for JSON data format",
+      estimated_effort: 24,
+      key: "HUDI-1009"
+    }
+  ];
