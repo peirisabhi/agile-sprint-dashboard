@@ -13,7 +13,7 @@ const Sidebar = ({ isOpen }) => {
 
       <ul className="sidebar-menu">
         <li className="active">
-          <a href="/">
+          <a href="/dashboard">
             <i className="fas fa-tachometer-alt"></i>
             <span>Dashboard</span>
           </a>

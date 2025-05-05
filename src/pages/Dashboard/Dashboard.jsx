@@ -3,7 +3,6 @@ import Sidebar from '../../components/Sidebar/Sidebar.jsx';
 import Topbar from '../../components/Topbar/Topbar.jsx';
 import StatsCards from '../../components/StatsCards/StatsCards.jsx';
 // import ProjectsTable from '../components/ProjectsTable/ProjectsTable';
-import BurndownChart from '../../components/Charts/BurndownChart.jsx';
 // import VelocityChart from '../components/Charts/VelocityChart';
 // import WorkDistributionChart from '../components/Charts/WorkDistributionChart';
 // import SprintRecommendations from '../components/SprintRecommendations/SprintRecommendations';
@@ -38,6 +37,80 @@ const Dashboard = () => {
                     </div>
 
                     <StatsCards/>
+
+                    <div className="row g-3">
+                        <div className="col-lg-12 animate delay-1">
+                            <div className="card h-100">
+                                <div className="card-header d-flex justify-content-between align-items-center">
+                                    <h3 className="card-title mb-0">
+                                        <i className="fas fa-project-diagram"></i>
+                                        Projects Overview
+                                    </h3>
+                                    <div className="dropdown">
+                                        <button className="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                type="button" id="projectFilter" data-bs-toggle="dropdown">
+                                            <i className="fas fa-filter"></i> Filter
+                                        </button>
+                                        <ul className="dropdown-menu dropdown-menu-end">
+                                            <li><a className="dropdown-item" href="#">All Projects</a></li>
+                                            <li><a className="dropdown-item" href="#">Active Only</a></li>
+                                            <li><a className="dropdown-item" href="#">Behind Schedule</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="card-body">
+                                    <div className="table-responsive">
+                                        <table className="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>Project</th>
+                                                <th>Team</th>
+                                                <th>Backlog</th>
+                                                <th>Sprint</th>
+                                                <th>Status</th>
+                                                <th>Progress</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <strong>E-commerce Platform</strong>
+                                                    <div className="text-muted small">Web Development</div>
+                                                </td>
+                                                <td>8</td>
+                                                <td>142</td>
+                                                <td>Sprint #12</td>
+                                                <td>
+                                                    {/*<span className={'badge badge-secondary'}>In Progress</span>*/}
+                                                    <span
+                                                        className={'badge bg-success'}>
+                                                           Done
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    {/*<div className="progress">*/}
+                                                    {/*    <div className="progress-bar bg-warning"></div>*/}
+                                                    {/*</div>*/}
+                                                    <div className="progress" style={{height: '20px'}}>
+                                                        <div
+                                                            className={`progress-bar ${100 == 50 ? 'bg-success' : 'bg-warning'}`}
+                                                            role="progressbar"
+                                                            style={{width: `${30}%`}}
+                                                        >
+                                                            {15}%
+                                                        </div>
+                                                    </div>
+                                                    <small className="text-muted">65% completed</small>
+                                                </td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </main>

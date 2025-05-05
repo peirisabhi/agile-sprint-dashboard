@@ -18,7 +18,38 @@ const StatsCards = () => {
       changeText: '5 from last week',
       type: 'success'
     },
-    // Other stat cards...
+    {
+      title: 'Team Members',
+      icon: 'fas fa-users',
+      value: '89',
+      change: 'down',
+      changeText: '5 from last week',
+      type: 'warning'
+    },
+    {
+      title: 'Backlog Tickets',
+      icon: 'fas fa-tasks',
+      value: '22',
+      change: 'up',
+      changeText: '5 from last week',
+      type: 'danger'
+    },
+    {
+      title: 'Sprints Completion',
+      icon: 'fas fa-check-circle',
+      value: '22',
+      change: 'up',
+      changeText: '5 from last week',
+      type: 'accent'
+    },
+    {
+      title: 'Avg Cycle Time',
+      icon: 'fas fa-check-circle',
+      value: '22',
+      change: 'up',
+      changeText: '5 from last week',
+      type: 'success'
+    },
   ];
 
   return (
